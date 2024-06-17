@@ -1,0 +1,119 @@
+body{
+    
+    justify-content: center;
+    border: saddlebrown solid 3px;
+    position: relative;
+}
+
+#intro-section,.content-part,.item-container{
+    width:450px;
+}
+/* flex display and directions */
+body,
+#intro-section,
+.single-food,
+.order,
+.item-container,
+#form-sec,
+#order-form,
+#order-part{
+    display: flex;
+    
+}
+body,#intro-section,#order-part,#form-sec,#order-form{
+    flex-direction: column;
+}
+.single-food,.order,.item-container{
+    flex-direction: row;
+}
+
+/*  Align items part*/
+.single-food,body,.intro-part,.item-container,#order-form,body{
+    align-items: center;
+}
+
+/* margin auto */
+
+#form-sec,#order-form{
+    margin: auto;
+}
+
+#intro-section{
+    background-image: url(images/cover.jpg);
+    color:aliceblue;
+    padding: 20px;
+    
+}
+
+/* width */
+#order-form,#order-form input{
+    width:90%;
+;
+}
+.intro-part{
+   
+    margin: 0px;
+    text-shadow: 0 0 4px black;
+}
+
+#order-part{
+    margin-bottom: 20px;
+}
+
+.single-food{
+    height: 140px;
+}
+span{
+    font-size: 100px;
+}
+.fa-solid{
+    font-size: 25px;
+}
+
+.green-back{
+    background: #38b000;
+    color:whitesmoke;
+    font-weight: bold;
+    height: 40px;
+}
+
+
+
+.item-container {
+    justify-content: space-between;
+}
+.delete-button{
+    border:none;
+    margin: auto auto auto 10px;
+    height:10px;
+}
+
+#form-sec{
+    width:300px;
+    height:280px;
+    text-align: center;
+    background: white;
+    border:black solid 2px;
+    position: fixed;
+    inset: 0;  
+    
+}
+
+
+#order-form{
+    width:90%;
+    gap:10px;
+}
+#form-sec h2{
+    margin:2px;
+}
+#order-form input{
+    border: gray solid 2px;
+    padding: 4px 5px;
+   
+}
+
+#exit-form{
+    margin:0 0 auto auto ;
+}
+
