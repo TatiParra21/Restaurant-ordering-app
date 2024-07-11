@@ -1,5 +1,6 @@
 body{
     margin:0;
+   
     position: relative;
 }
 /* box-sizing */
@@ -9,8 +10,8 @@ body{
 #intro-section,
 .content-part,
 body,
-#menu-part{
-    width:100vw;
+#menu-part,.item-container{
+    max-width:100vw;
 }
 
 .item-plus{
@@ -18,18 +19,15 @@ body,
     justify-content: center;
 }
 
-.grid-items{
-    font-size: 2rem; 
-    padding: 0.5em 0; 
-}
+
 .emoji-name{
-    width: 30%;
+    width: 20%;
 }
 .emoji-name h2{
-    font-size: 3.5rem ;
+    font-size: 0.8rem ;
 }
 .item-plus{
-    width: 20%;
+    width: 10%;
 }
 
 .item-details{
@@ -37,20 +35,22 @@ body,
     width:50%
 }
 .item-details h2{
-    font-size:4rem ;
+    font-size:1.2rem ;
+    text-align: center;
 }
 .item-details h3{
-    font-size: 3rem;
-    text-align: center;
-    padding: 0.5em 0;
+    font-size: 0.8rem;
+    
+    /* padding: 0.5em 0; */
     /* border:#38b000 solid 3px; */
 }
 .item-details{
     justify-content: space-between;
-    gap:1em;
+    gap:0.2em;
+    
 }
 #intro-section{
-    height:20vh;
+    height:15vh;
     
 }
 /* flex display and directions */
@@ -100,7 +100,8 @@ body,
     background-repeat: no-repeat;
     background-size: cover;
     color:aliceblue;
-    padding: 2.25em;                  
+    
+                     
     
 }
 
@@ -110,13 +111,14 @@ body,
 ;
 }
 .intro-part{
-   font-size: 7rem;
-   margin:1em 4.2em;
+   font-size: 1rem;
+   padding: 1em;
+   
     text-shadow: 0 0 0.55em black;
 }
 
 #sub-head{
-    font-size:3em; 
+    font-size:0.8em; 
      
 }
 
@@ -128,11 +130,11 @@ body,
 
 
 span{
-    font-size: 9.5rem; 
+    font-size: 2.5rem; 
     
 }
 .fa-solid{
-    font-size: 5rem; /*24px*/
+    font-size: 2rem; /*24px*/
     
 }
 
