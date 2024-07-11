@@ -1,73 +1,139 @@
 body{
-    
-    justify-content: center;
-    border: saddlebrown solid 3px;
+    margin:0;
     position: relative;
 }
+/* box-sizing */
+*{
+    box-sizing: border-box;
+}
+#intro-section,
+.content-part,
+body,
+#menu-part{
+    width:100vw;
+}
 
-#intro-section,.content-part,.item-container{
-    width:450px;
+.item-plus{
+ 
+    justify-content: center;
+}
+
+.grid-items{
+    font-size: 2rem; 
+    padding: 0.5em 0; 
+}
+.emoji-name{
+    width: 30%;
+}
+.emoji-name h2{
+    font-size: 3.5rem ;
+}
+.item-plus{
+    width: 20%;
+}
+
+.item-details{
+    
+    width:50%
+}
+.item-details h2{
+    font-size:4rem ;
+}
+.item-details h3{
+    font-size: 3rem;
+    text-align: center;
+    padding: 0.5em 0;
+    /* border:#38b000 solid 3px; */
+}
+.item-details{
+    justify-content: space-between;
+    gap:1em;
+}
+#intro-section{
+    height:20vh;
+    
 }
 /* flex display and directions */
 body,
 #intro-section,
-.single-food,
 .order,
-.item-container,
 #form-sec,
 #order-form,
-#order-part{
+#order-part,
+#menu-part,
+.item-container,
+.item-details,
+.item-plus{
     display: flex;
     
 }
-body,#intro-section,#order-part,#form-sec,#order-form{
+body,
+#intro-section,
+#order-part,
+#form-sec,
+#order-form,
+#thank-sec,#menu-part{
     flex-direction: column;
 }
-.single-food,.order,.item-container{
+.order,.item-container,.item-details{
     flex-direction: row;
 }
 
 /*  Align items part*/
-.single-food,body,.intro-part,.item-container,#order-form,body{
+.intro-part,
+#order-form,
+#thank-sec,
+.item-details,
+.item-plus{
     align-items: center;
 }
 
+
 /* margin auto */
 
-#form-sec,#order-form{
+#form-sec,#order-form,#thank-sec{
     margin: auto;
 }
 
 #intro-section{
     background-image: url(images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color:aliceblue;
-    padding: 20px;
+    padding: 2.25em;                  
     
 }
 
 /* width */
 #order-form,#order-form input{
-    width:90%;
+    width:90vw;
 ;
 }
 .intro-part{
-   
-    margin: 0px;
-    text-shadow: 0 0 4px black;
+   font-size: 7rem;
+   margin:1em 4.2em;
+    text-shadow: 0 0 0.55em black;
+}
+
+#sub-head{
+    font-size:3em; 
+     
 }
 
 #order-part{
-    margin-bottom: 20px;
+    margin-bottom: 1.25em; 
 }
 
-.single-food{
-    height: 140px;
-}
+
+
+
 span{
-    font-size: 100px;
+    font-size: 9.5rem; 
+    
 }
 .fa-solid{
-    font-size: 25px;
+    font-size: 5rem; /*24px*/
+    
 }
 
 .green-back{
@@ -79,24 +145,16 @@ span{
 
 
 
-.item-container {
-    justify-content: space-between;
-}
+
 .delete-button{
     border:none;
-    margin: auto auto auto 10px;
+    margin: auto auto auto 0.625em;/* 10px */
     height:10px;
 }
 
 #form-sec{
     width:300px;
-    height:280px;
-    text-align: center;
-    background: white;
-    border:black solid 2px;
-    position: fixed;
-    inset: 0;  
-    
+    height:280px;  
 }
 
 
@@ -105,15 +163,32 @@ span{
     gap:10px;
 }
 #form-sec h2{
-    margin:2px;
+    margin:0.125em;/* 2px */
 }
 #order-form input{
-    border: gray solid 2px;
-    padding: 4px 5px;
+    border: gray solid 0.125em;
+    padding: 0.25em 0.3125em; /* 4px 5px */
    
 }
 
-#exit-form{
+.exit-button{
     margin:0 0 auto auto ;
 }
+/* inset fixed */
+#thank-sec,#form-sec{
+    position: fixed;
+    inset: 0;  
+    background: white;
+    border:black solid 2px;
+}
+#thank-sec{
+    width:20%;
+    height:30%;
+    
+    
+}
 
+/* text align */
+#thank-sec,#form-sec,.emoji-name{
+    text-align: center;
+}
