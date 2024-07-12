@@ -154,12 +154,14 @@ const renderOrders = list =>{
                 <h2>${name}</h2>
                 <button class="delete-button" data-uid="${id}">remove</button>
             </div>
+            <div class="item-container order-second">
             <h2>${amount}</h2>
-               <div>
+               <div class="order-nums">
                     <i class="fa-regular fa-square-minus" data-minus="${id}"></i>
                     <i class="fa-regular fa-square-plus" data-plus="${id}"></i>
                 </div>
             <h2>$${price}</h2>
+            </div>
         </div>
         `
     }).join(" ")

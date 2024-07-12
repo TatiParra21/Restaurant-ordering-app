@@ -14,6 +14,7 @@ body,
     max-width:100vw;
 }
 
+
 .item-plus{
  
     justify-content: center;
@@ -21,41 +22,47 @@ body,
 
 
 .emoji-name{
-    width: 20%;
+    width: 30%;
 }
 .emoji-name h2{
-    font-size: 0.8rem ;
+    font-size: 1.3rem ;
 }
 .item-plus{
-    width: 10%;
+    width: 15%;
 }
 
 .item-details{
     
-    width:50%
+    width:55%
 }
 .item-details h2{
     font-size:1.2rem ;
-    text-align: center;
+    
+    
 }
 .item-details h3{
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     
-    /* padding: 0.5em 0; */
+    padding: 1em; 
     /* border:#38b000 solid 3px; */
 }
-.item-details{
+.item-details,.order-second{
     justify-content: space-between;
-    gap:0.2em;
+   
     
 }
 #intro-section{
     height:15vh;
+    align-items: start;
     
+}
+.intro-part{
+    height:100%;
+    margin:0;
+    padding: 1em;
 }
 /* flex display and directions */
 body,
-#intro-section,
 .order,
 #form-sec,
 #order-form,
@@ -80,11 +87,12 @@ body,
 }
 
 /*  Align items part*/
-.intro-part,
+header,
 #order-form,
 #thank-sec,
 .item-details,
-.item-plus{
+.item-plus,
+.item-container{
     align-items: center;
 }
 
@@ -110,27 +118,22 @@ body,
     width:90vw;
 ;
 }
-.intro-part{
-   font-size: 1rem;
-   padding: 1em;
-   
+header{
+   font-size: 1.010rem;   
     text-shadow: 0 0 0.55em black;
 }
 
-#sub-head{
-    font-size:0.8em; 
+
+#sub-head,#main-title{
+    /* font-size:1.4em;  */
+    margin: 0.1em 0;
+    
      
 }
 
-#order-part{
-    margin-bottom: 1.25em; 
-}
-
-
-
 
 span{
-    font-size: 2.5rem; 
+    font-size: 3rem; 
     
 }
 .fa-solid{
@@ -187,6 +190,18 @@ span{
     width:20%;
     height:30%;
     
+    
+}
+.order,.order-second{
+    width: 50%;
+}
+#order-part{
+    margin-top: 1em;
+}
+
+#order-part .item-container{
+    gap:1em;
+    margin-right: 0.5em;
     
 }
 
