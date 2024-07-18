@@ -234,7 +234,7 @@ const setThanks=(e)=>{
     
     const userName = document.getElementById("user-name").value
     localStorage.setItem("username",userName)
-   
+   e.target.reset()
    
 }
 
