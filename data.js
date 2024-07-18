@@ -21,5 +21,30 @@
         emoji: "🍺",
         id: 2
     }
+    ,
+        {
+        name: "French Fries",
+        ingredients: ["salt, potatoes, vegetable oil"],
+        price: 8,
+        emoji: "🍟",
+        id: 3
+    }
+    ,
+        {
+        name: "Hotdog",
+        ingredients: ["sausage, bun, mustard "],
+        price: 11,
+        emoji: "🌭",
+        id: 4
+    },
+    {
+    name: "Bubble Tea",
+    ingredients: ["tapioca, tea, milk"],
+    price: 13,
+    emoji: "🧋",
+    id: 5
+}
 ]
+
+
 

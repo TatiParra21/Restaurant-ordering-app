@@ -18,8 +18,8 @@ const makeMenu = foods => {
                 <span>${emoji}</span>
             </div>
             <div class="item-details grid-items">
-                <h3>${ingredients.join(", ")}</h3>
-                <h2>$${price}</h3>
+                <h2>${ingredients.join(", ")}</h2>
+                <h3>$${price}</h3>
             </div>
             <div class="item-plus grid-items">
             <i class="fa-solid fa-circle-plus" data-icon="${id}"></i>
@@ -42,8 +42,8 @@ const start =()=>{
     if(namethank){
         thankSec.innerHTML =`
         <button id="exit-thank" class="exit-button">X</button>
-        <div>
-        <h1 id="thank-you-part">Thank you ${namethank} for your purchase!!!</h1>
+        <div id="thank-you-part">
+        <h1 >Thank you ${namethank} for your purchase!!!</h1>
         </div>
         `
         thankSec.style.display = "flex"
@@ -166,7 +166,7 @@ const renderOrders = list =>{
         `
     }).join(" ")
     orderPart.innerHTML =  renderedOrders += `
-    <div class="item-container">
+    <div class="item-container total-sec">
         <div>
                 <h2>Total Price</h2>
         </div>
